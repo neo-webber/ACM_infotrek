@@ -1,0 +1,783 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url('https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  color: #EDEDED;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* dark overlay  */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.title {
+  font-family: Roboto, sans-serif;
+  font-size: 3.2rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
+  margin-top: -300px;
+}
+
+#about p {
+  text-align: justify;
+
+}
+
+/* Our Mission Heading */
+
+.mission-heading {
+  text-align: center;
+
+
+  margin-top: -5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.mission-heading h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  color: #3a9efd;
+
+  margin-bottom: -30px;
+
+  letter-spacing: 1px;
+}
+
+/* Contact Section */
+.contact-section {
+  text-align: center;
+  color: #ffffff;
+
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  width: 100%;
+
+  max-width: 1000px;
+ 
+  padding: 40px;
+  margin-left: 120px;
+  border-radius: 20px;
+}
+
+.contact-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #3a9efd;
+
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.contact-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: #d3e4ff;
+  margin-bottom: 50px;
+  margin-top: -10px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 25px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.contact-card img {
+  width: 25px;
+  height: 25px;
+}
+
+.contact-card i {
+  font-size: 1.6rem;
+  color: #3a9efd;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+ 
+  background: rgba(255, 255, 255, 0.15);
+}
+
+
+
+/*  ACM Students Chapter Intro */
+.acm-intro {
+  text-align: center;
+  margin-top: 110px;
+  
+  margin-bottom: 20px;
+ 
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 5px;
+  margin-top: 10px;
+}
+
+.acm-intro h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #d3e4ff;
+ 
+  margin-bottom: 5px;
+}
+
+.acm-intro p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #d3e4ff;
+  letter-spacing: 4px;
+  text-transform: lowercase;
+  font-style: italic;
+
+}
+
+
+.logo-o img {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+ 
+}
+
+
+
+
+
+
+
+
+/* Cash Prize Section */
+
+.cashprize-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  width: 100%;
+  text-align: center;
+}
+
+/* Glass Box */
+.cash-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+ 
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+
+  width: 100%;
+  
+  max-width: 1000px;
+  
+  height: 200px;
+
+  padding: 40px;
+  margin-left: 120px;
+}
+
+/* Heading */
+.cash-heading {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #3a9efd;
+  letter-spacing: 2px;
+}
+
+/* Amount */
+.cash-amount {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(58, 158, 253, 0.6);
+}
+
+
+
+
+
+
+
+.tagline {
+  margin-top: 5px;
+  font-size: 1rem;
+  opacity: 4;
+}
+
+.cta-btn {
+  margin-top: 25px;
+  padding: 12px 30px;
+  border: 1.5px solid #EDEDED;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #EDEDED;
+  font-weight: 500;
+  transition: 0.3s ease-in-out;
+}
+
+.cta-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+  transform: scale(1.02);
+}
+
+
+.glass-section {
+  margin: 80px auto;
+  width: 70%;
+  padding: 30px;
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.07);
+
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+
+}
+
+.glass-section h2 {
+  color: #3a9efd;
+}
+
+
+
+.highlights {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 60px 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 20px 40px;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 80px;
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+
+
+.star-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.star {
+  position: absolute;
+  width: 2.8px;
+  height: 2.8px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.2) 70%);
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+  animation: twinkle infinite ease-in-out;
+}
+
+@keyframes twinkle {
+
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.6);
+  }
+}
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-in-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.nav-logo-nitt {
+  height: 50px;
+  width: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.nav-logo-acm {
+  height: 50px;
+  width: auto;
+  margin-left: 20px;
+
+  display: block;
+  cursor: pointer;
+}
+
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+
+.brand {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #EDEDED;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s;
+}
+
+.nav-links a {
+  color: #EDEDED;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FFFFFF;
+  transform: scale(1.15);
+}
+
+
+.login-btn button {
+  background: #FFFFFF;
+  color: #000000;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 28px;
+
+  font-size: 1rem;
+
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.login-btn button:hover {
+  background: rgba(255, 255, 255, 0.85);
+  transform: scale(1.08);
+}
+
+
+
+body {
+  padding-top: 70px;
+}
+
+
+.menu-toggle {
+  display: none;
+  font-size: 1.4rem;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .nav-links {
+    position: fixed;
+    top: 65px;
+    left: -100%;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    transition: 0.4s ease-in-out;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .login-btn {
+    display: none;
+  }
+}
+
+
+.events-section {
+  padding: 100px 60px;
+  text-align: center;
+  color: #fff;
+}
+
+.event-days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px 50px;
+  
+}
+
+
+.event-date {
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+  
+  justify-content: center;
+  margin-bottom: 30px;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+}
+
+
+.day-number {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #3a9efd;
+  line-height: 1;
+}
+
+.month-text {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-top: 4px;
+}
+
+
+.weekday {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #cccccc;
+  margin-top: 8px;
+  letter-spacing: 2px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+.event-card span1 {
+  color: #FFFFFF;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+
+  z-index: 2;
+
+
+}
+
+.event-card {
+  position: relative;
+  width: 320px;
+  height: 200px;
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  padding: 18px;
+  margin-bottom: 40px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+}
+
+
+.event-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.25));
+  z-index: 1;
+}
+
+
+.event-card span,
+.event-card h4 {
+  position: relative;
+  z-index: 2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+
+.event-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(58, 158, 253, 0.5);
+}
+
+
+
+#algorithmia {
+  background-image: url("assets/algorithmia.jpg");
+}
+
+#crypt {
+  background-image: url("assets/crypt of the necro dancer.jpg");
+}
+
+#backtrack {
+  background-image: url("assets/backTrack.jpg");
+}
+
+#emoji {
+  background-image: url("assets/emoji charades.jpg");
+}
+
+#treasure1 {
+  background-image: url("assets/treasure hunt 1.jpg");
+}
+
+#typeclipse {
+  background-image: url("assets/typeclipse.jpg");
+}
+
+#treasure2 {
+  background-image: url("assets/treasure hunt 2.jpg");
+}
+
+#stellar1 {
+  background-image: url("assets/stellar Quest 1.jpg");
+}
+
+#stellar2 {
+  background-image: url("assets/stellar Quest 2.jpg");
+}
+
+#replicode {
+  background-image: url("assets/Replicode.jpg");
+}
+
+#destinite {
+  background-image: url("assets/destinite.jpg");
+}
+
+
+/* ✨ Floating Animation */
+@keyframes floatAnim {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float {
+  animation: floatAnim 4s ease-in-out infinite;
+}
+
+
+
+.explore-container {
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+
+
+.explore-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+
+  border: none;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+
+.explore-btn:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(75, 108, 183, 0.4);
+}
+
+
+
+.explore-btn img {
+  width: 45px;
+  height: 45px;
+  filter: none;
+  /* no glow */
+  transition: transform 0.3s ease;
+}
+
+
+
+.explore-text {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  opacity: 1;
+}
